@@ -1,0 +1,31 @@
+
+body {
+  font-family: helvetica, 'open sans', sans-serif;
+}
+
+#header {
+  
+}
+
+
+h1 {
+  font-size: 50px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5)
+}
+
+h2 {
+  color: #94C9A9;
+}
+
+li {
+  color: #777DA7;
+}
+
+p {
+
+}
+#hobbies {
+  background: rgba(255, 26, 26, .5);
+
+}
