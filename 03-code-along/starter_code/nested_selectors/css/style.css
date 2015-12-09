@@ -1,0 +1,13 @@
+body {
+  background: #666699;
+}
+
+blockquote {
+  background: #3333ff;
+  padding: 10px 20px 10px 20px;
+  font-style: italic;
+}
+
+blockquote em {
+  font-style: normal;
+}
