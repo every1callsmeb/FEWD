@@ -59,16 +59,17 @@ header{
 /* CONTENT */
 
 #left-content {
-  width: 500px;
+  width: 55%;
   padding: 15px 0px 15px 0px;
   border-bottom: 1px solid #000;
+  position: relative;
   float: left;
 }
 
 #right-content {
-  width: 250px;
+  width: 40%;
   padding: 20px;
-  float: right;
+  float:right;
 }
 
 #profile-image{
