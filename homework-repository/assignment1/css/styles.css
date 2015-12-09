@@ -1,11 +1,13 @@
 body {
   width: 850px;
+  background: #f6f6f6;
   margin: 20px auto;
   font-family: "Open-Sans", "Helvetica", sans-serif;
   font-size: 14px;
   border-top: 5px solid #000;
   border-bottom: 5px solid #000;
 }
+
 
 h1{
 
