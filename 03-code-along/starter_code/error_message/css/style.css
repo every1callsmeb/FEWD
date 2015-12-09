@@ -1,0 +1,17 @@
+div {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+#notification {
+  background: #ff9999 ;
+}
+
+.message {
+  background: #1aff66;
+  border: 1px solid red;
+}
+
+.error {
+  background: red;
+}

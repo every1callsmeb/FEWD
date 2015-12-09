@@ -11,3 +11,8 @@ blockquote {
 blockquote em {
   font-style: normal;
 }
+
+.red-box {
+  background: red;
+  padding: 10px;
+}
