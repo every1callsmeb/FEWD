@@ -47,13 +47,18 @@ Developer @GA in NYC
 
 body {
      color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
-     background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
+     font-size: 14px;
+     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
 }
 
+h2 {
+  font-size: 32px;
+}
+
+.center {
+  text-align: center;
+}
 
 /******************************************
 /* LAYOUT
@@ -61,20 +66,100 @@ body {
 
 /* Center the container */
 #container {
-  width: 100%;
+  width: 1200px;
+}
+
+#header {
+  height: 700px;
+  background: url(/img/header_bg.jpg) no-repeat;
+}
+
+#header h1 {
+  margin: 0px;
+  padding: 45px 0px 0px 120px;
+  color: #FFF;
+}
+
+.logo {
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+#hero-message {
+  margin: 0 auto;
+  width: 50%;
+
+}
+
+#benefits-block{
+  height: 612px;
+  background: #2F6F5;
+  padding: 45px 0px 0px 120px;
+
+}
+
+#benefits-block h2 {
+
+  font-weight: 600;
+
+}
+
+#highlight-features {
+
+
+}
+
+#testimonial-block {
+  height: 395px;
+  background: url(/img/testimonial_bg.jpg) no-repeat;
+
+}
+
+blockquote {
+  width: 590px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 35px;
+  line-height: 45px;
+  color: #FFF;
   margin: auto;
-  height: 500px;
+  padding-top: 100px;
 
 }
 
-header {
+span {
+  font-style: normal;
+  font-weight: 600;
 
 }
-
-footer {
-
+#sign-up-block{
+  height: 120px;
+  background: #F4F416;
+  font-size: 12px;
+  font-weight: 800;
 }
 
+#footer {
+  height: 350px;
+  background: #0B0E0E;
+  color: #fff;
+  padding-top: 55px;
+}
+
+#social-footer ul{
+  text-align: center;
+  padding: 65px 0px 65px 0px;
+}
+
+#social-icon li {
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+}
+
+#copyright {
+  text-align: center;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -82,3 +167,30 @@ footer {
 
 
 
+/******************************************
+/* BUTTONS
+/*******************************************/
+
+.yellow-button {
+  font-size: 30px;
+  border-radius: 5px;
+  text-align: center;
+  height: 60px;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  background: #f7e14f;
+  color: #033048;
+}
+
+.blue-button {
+  font-size: 30px;
+  border-radius: 5px;
+  text-align: center;
+  height: 60px;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  background: #033048;
+  color: #fff;
+}
