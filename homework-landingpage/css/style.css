@@ -93,10 +93,20 @@ h2 {
 }
 
 #benefits-block{
-  height: 612px;
+  height: 610px;
   background: #2F6F5;
-  padding: 45px 0px 0px 120px;
+  padding: 60px 0px 0px 120px;
 
+}
+
+#benefits-left{
+  width: 480px;
+
+}
+
+#benefits-block p {
+  font-size: 24px;
+  line-height: 34px;
 }
 
 #benefits-block h2 {
@@ -106,6 +116,8 @@ h2 {
 }
 
 #highlight-features {
+  font-size: 24px;
+  line-height: 34px;
 
 
 }
