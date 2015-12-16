@@ -1,6 +1,6 @@
 body {
   font-family: "Helvetica Neue", Helvetica;
-  background: black;
+  background: #e3e3e3;
 
 }
 
@@ -8,7 +8,7 @@ body {
   width: 960px;
   height: 100%;
   margin: 0 auto;
-  background: #e9eaed;
+  /*background: #e9eaed;*/
 }
 
 h1 {
@@ -18,8 +18,13 @@ h1 {
 header {
   margin-bottom: 20px;
   padding: 20px;
-  border: 2px solid black;
+  border-bottom: 2px solid black;
   overflow: auto; /*use overflow to fix padding of floated elements */
+}
+
+header h1 {
+  font-family: "Times New Roman", sans-serif;
+  font-style: italic;
 }
 
 header nav {
@@ -31,23 +36,53 @@ header #weather {
 }
 
 article {
-  width: 740px;
+  width: 660px;
   margin-bottom: 20px;
+  padding: 20px;
   float: left;
+}
+
+article h3 {
+  font-style: italic;
+  font-size: 14px;
+  color: #808080;
 }
 
 aside {
   width: 200px;
   float: left;
   margin-left: 20px;
-}
-
-footer {
-  height: 90px;
-  clear: left;  /*clear the floated elements */
   padding: 20px;
 }
 
+aside ul {
+  padding: 0px;
+}
+
+aside li {
+  list-style: none;
+  padding-bottom: 20px;
+
+
+}
+footer {
+  clear: left;  /*clear the floated elements */
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+footer p {
+  float: left;
+  margin: 10px;
+}
+
+footer a {
+  float: right;
+  margin: 10px;
+
+}
+
 header, article, aside, footer {
-  background: red;
+  background: #FFF
 }
