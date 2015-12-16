@@ -21,14 +21,12 @@ header {
 }
 
 article {
-  height: 550px;
   width: 740px;
   margin-bottom: 20px;
   float: left;
 }
 
 aside {
-  height: 330px;
   width: 200px;
   float: left;
   margin-left: 20px;
@@ -36,7 +34,7 @@ aside {
 
 footer {
   height: 90px;
-  clear: left;
+  clear: left;  /*clear the floated elements */
   padding: 20px;
 }
 
