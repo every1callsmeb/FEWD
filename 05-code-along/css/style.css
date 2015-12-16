@@ -16,9 +16,10 @@ h1 {
 }
 
 header {
-  height: 90px;
   margin-bottom: 20px;
+  padding: 20px;
   border: 2px solid black;
+  overflow: auto; /*use overflow to fix padding of floated elements */
 }
 
 header nav {
