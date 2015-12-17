@@ -72,6 +72,7 @@ a {
 /* Center the container */
 #container {
   margin: auto;
+  background: #F2F6F5;
 }
 
 header {
@@ -124,11 +125,13 @@ article h1 {
   font-size: 40px;
   font-weight: 600;
   color: #01214C;
+  margin-bottom: 30px;
 }
 
 article p {
   font-weight: 100;
   color: #606161;
+  margin-bottom: 60px;
 }
 
 article p .first-character{
@@ -141,12 +144,23 @@ article p .first-character{
 }
 
 .read-more {
-
+  font-weight: 600px;
+  margin-bottom: 40px;
+  text-align: right;
 }
 
 aside {
   width: 240px;
   float: left;
+}
+
+aside ul {
+  padding: 0px;
+  list-style: none;
+}
+
+aside li {
+  padding-bottom: 5px;
 }
 
 #cta {
@@ -156,11 +170,27 @@ aside {
 }
 
 footer {
-  background: #121212
+  background: #121212;
   text-align: center;
-
 }
 
+footer .logo {
+  padding-top: 50px;
+}
+#social-icon {
+  padding: 50px 0px 50px 0px;
+}
+
+#social-icon li {
+  display: inline;
+  list-style: none;
+  padding: 15px;
+}
+
+#copyright{
+  color: #FFF;
+  padding-bottom: 50px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
