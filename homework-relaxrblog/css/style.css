@@ -46,28 +46,118 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     color: #000;
-     font-size: 12px;
+     background: #F0EFEF;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 24px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     color: #000;
 }
 
+h1 {
+  margin: 0px;
+}
 
+ul {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #01214C;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 
 /* Center the container */
 #container {
-  width: 960px;
   margin: auto;
 }
 
 header {
+  background: #01214C;
+  overflow: auto;
+}
+
+header h1 {
+  float: left;
 
 }
 
+.logo {
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+nav {
+  font-weight: 400;
+  float: left;
+
+}
+
+nav  ul  li  a {
+  color: #F9E42E;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+
+}
+
+section {
+  width: 700px;
+  margin-right: 20px;
+  float: left;
+}
+
+article {
+  border-bottom: 1px solid #01214C;
+}
+
+article h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #01214C;
+}
+
+article p {
+  font-weight: 100;
+  color: #606161;
+}
+
+article p .first-character{
+  float: left;
+  color: #606161;
+  font-weight: 600;
+  font-size: 95px;
+  line-height: 75px;
+  padding: 4px 8px 0px 3px;
+}
+
+.read-more {
+
+}
+
+aside {
+  width: 240px;
+  float: left;
+}
+
+#cta {
+  background: #f9e42e;
+  text-align: center;
+  clear: left;
+}
+
 footer {
+  background: #121212
+  text-align: center;
 
 }
 
@@ -77,4 +167,10 @@ footer {
 
 
 
+.white {
+  color: #FFF;
+}
 
+.yellow {
+  color: #f9e42e;
+}
