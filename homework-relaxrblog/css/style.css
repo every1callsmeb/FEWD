@@ -46,18 +46,14 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     background: #F0EFEF;
+     background: #F2F6F5;
      font-family: 'Open Sans', sans-serif;
      font-size: 24px;
      line-height: 1.4;
      color: #000;
 }
 
-h1 {
-  margin: 0px;
-}
-
-ul {
+h1, h3, ul {
   margin: 0px;
 }
 
@@ -65,14 +61,20 @@ a {
   text-decoration: none;
   color: #01214C;
 }
+
+.spacer-30 {
+  height: 30px;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 
 /* Center the container */
 #container {
-  margin: auto;
-  background: #F2F6F5;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 50px;
+
 }
 
 header {
@@ -81,8 +83,9 @@ header {
 }
 
 header h1 {
+  margin-left: 120px;
+  padding-top: 40px;
   float: left;
-
 }
 
 .logo {
@@ -92,8 +95,11 @@ header h1 {
 }
 
 nav {
+  margin-right: 120px;
+  padding: 50px 0px 50px 0px;
+  font-size: 20px;
   font-weight: 400;
-  float: left;
+  float: right;
 
 }
 
@@ -112,13 +118,15 @@ nav li {
 }
 
 section {
+  background: #F2F6F5;
   width: 700px;
   margin-right: 20px;
   float: left;
 }
 
 article {
-  border-bottom: 1px solid #01214C;
+  border-bottom: 1px solid;
+  margin-bottom: 45px;
 }
 
 article h1 {
@@ -151,7 +159,13 @@ article p .first-character{
 
 aside {
   width: 240px;
+  color: #01214C;
   float: left;
+}
+
+aside h3{
+  font-size: 34px;
+  font-weight: 800;
 }
 
 aside ul {
@@ -163,10 +177,37 @@ aside li {
   padding-bottom: 5px;
 }
 
+aside p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+aside p a {
+  display: block;
+  font-weight: 600;
+}
+
+.side-block {
+  margin-bottom: 55px;
+}
+
 #cta {
+  height: 120px;
   background: #f9e42e;
   text-align: center;
-  clear: left;
+  clear: both;
+}
+
+#cta a {
+  margin: auto;
+  display: block;
+  background: #01214C;
+  border-radius: 5px;
+  width: 300px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFF;
 }
 
 footer {
