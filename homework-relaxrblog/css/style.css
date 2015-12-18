@@ -70,24 +70,18 @@ a {
 /*******************************************/
 
 /* Center the container */
-#container {
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 50px;
-
+.container {
+  margin: 0 auto;
+  width: 960px;
 }
 
 header {
   background: #01214C;
   overflow: auto;
-}
-
-header div {
-  width: 960px;
+  margin-bottom: 50px;
 }
 
 header h1 {
-  margin-left: 120px;
   padding-top: 40px;
   float: left;
 }
@@ -99,7 +93,6 @@ header h1 {
 }
 
 nav {
-  margin-right: 120px;
   padding: 50px 0px 50px 0px;
   font-size: 20px;
   font-weight: 400;
@@ -123,8 +116,8 @@ nav li {
 
 section {
   background: #F2F6F5;
-  width: 700px;
-  margin-right: 20px;
+  width: 695px;
+  margin-right: 25px;
   float: left;
 }
 
@@ -170,9 +163,11 @@ aside {
 aside h3{
   font-size: 34px;
   font-weight: 800;
+  margin-bottom: 10px;
 }
 
 aside ul {
+  margin-left: 10px;
   padding: 0px;
   list-style: none;
 }
@@ -222,6 +217,7 @@ footer {
 footer .logo {
   padding-top: 50px;
 }
+
 #social-icon {
   padding: 50px 0px 50px 0px;
 }
@@ -235,12 +231,12 @@ footer .logo {
 #copyright{
   color: #FFF;
   padding-bottom: 50px;
+  font-size: 15px;
 }
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-
 
 .white {
   color: #FFF;
