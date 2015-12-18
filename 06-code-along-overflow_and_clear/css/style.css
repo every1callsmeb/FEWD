@@ -1,0 +1,26 @@
+.parent {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background: #E2175A;
+  border: 1px solid #9E1140;
+  margin-left: 10px;
+}
+
+/* for class */
+
+.float {
+  float: left;
+}
+
+.overflow {
+  overflow: auto;
+}
+
+.clear {
+  clear: both;
+}
