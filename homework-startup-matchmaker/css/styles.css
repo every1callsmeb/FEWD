@@ -1,0 +1,79 @@
+body {
+  font-family: Merriweather, sans-serif;
+
+}
+
+.container {
+  width: 1280px;
+  margin: auto 0;
+}
+
+header {
+  background: #000;
+  color: #FFF;
+}
+
+header li {
+  color: #FFF;
+}
+
+#logo {
+  color: #FBF348;
+  font-family: Merriweather, sans-serif;
+}
+
+#nav ul {
+  padding: 0px;
+}
+
+#nav li {
+  display: inline;
+}
+
+#hero-banner {
+  background: #C6C6C6;
+}
+
+#hero-banner h2{
+  font-style: italic;
+}
+
+#strikeout {
+  text-decoration: line-through;
+}
+
+#under-score {
+  display:inline-block;
+  border-bottom: 3px solid #FBF348;
+}
+
+#hero {
+  height: 445px;
+  /*background-image: url("/img/hero-image.png");
+  background-repeat: no-repeat;*/
+}
+
+#create-profile{
+  width: 320px;
+  height: 420px;
+  border: 2px solid grey;
+}
+
+.columns{
+  width: 420px;
+  float: left;
+}
+
+.columns h3{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.columns p{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+}
+
+footer{
+  clear: left;
+}
