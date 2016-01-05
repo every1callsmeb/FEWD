@@ -5,6 +5,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 
@@ -16,11 +17,11 @@ a {
   border-radius: 5px;
   font-family: Merriweather, sans-serif;
   color: #000;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px 25px;
   text-align: center;
   text-transform: capitalize;
-  margin: 30px 0px;
+  margin: 30px auto;
 }
 
 .yellow {
@@ -106,7 +107,7 @@ header li {
   background: rgba(255, 255, 255, 0.5);
   color: #000;
   float: right;
-  padding-right: 25px;
+  padding: 0px 25px;
   clear:left;
   margin: 15px 4px;
 
@@ -114,6 +115,7 @@ header li {
 
 #create-profile-copy{
   margin: 0 auto;
+  padding-top: 35px;
 }
 
 .columns{
