@@ -3,6 +3,16 @@ body {
   background: #DEDEDE;
 }
 
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+
+}
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -133,14 +143,11 @@ header li {
 }
 
 .columns h3{
+
   font-size: 22px;
   font-weight: 600;
 }
 
-.columns p{
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 15px;
-}
 
 #column-1, #column-2 {
   border-right: 1px solid #e3e3e3;
