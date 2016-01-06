@@ -1,0 +1,50 @@
+div, header, footer, section {
+  border: 1px solid black;
+}
+
+header {
+  height: 100px;
+  margin-bottom: 50px;
+  /*overflow: auto;*/
+}
+
+header div {
+  height: 80px;
+  margin: 10px;
+  float: left;
+  width: 10%;
+}
+
+#main {
+  height: 200px;
+  margin: 0 5%;
+  margin-bottom: 50px;
+  /*overflow: auto;*/
+}
+
+#secondary {
+  height: 200px;
+  margin-bottom: 50px;
+  overflow: auto;
+}
+
+#secondary section {
+  height: 180px;
+  margin: 10px;
+  float: left;
+  width: 21%;
+  margin-left: 3%;
+}
+
+footer {
+  height: 100px;
+  /*overflow: auto;*/
+}
+
+footer section {
+  height: 80px;
+  margin: 10px;
+  float: left;
+  width: 29%;
+  margin-left: 3%;
+}
