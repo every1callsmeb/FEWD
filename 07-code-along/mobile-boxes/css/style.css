@@ -38,11 +38,11 @@ header div {
   float: left;
   width: 21%;
   margin-left: 3%;
+  background: #000;
 }
 
 footer {
-  height: 100px;
-  /*overflow: auto;*/
+  overflow: auto;
 }
 
 footer section {
@@ -81,6 +81,10 @@ footer section {
 
   #secondary section:last-child{
     display: none;
+  }
+
+  footer section {
+    width: 95%
   }
 
 }
