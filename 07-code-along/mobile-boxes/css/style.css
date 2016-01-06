@@ -34,7 +34,7 @@ header div {
 
 #secondary section {
   height: 180px;
-  margin: 10px;
+  margin: 1%;
   float: left;
   width: 21%;
   margin-left: 3%;
@@ -60,7 +60,8 @@ footer section {
 
 /*apply these rules when it's 0 to 500px*/
 
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 500px) {
 
   header div {
    display: none;
@@ -85,6 +86,25 @@ footer section {
 
   footer section {
     width: 95%
+  }
+
+}
+
+
+/* Mobile Style */
+
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+
+  .hide-tablet {
+    display: none;
+  }
+
+  #secondary section{
+    width: 45%;
+  }
+
+  footer section {
+    width: 28%;
   }
 
 }
