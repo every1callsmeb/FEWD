@@ -1,0 +1,180 @@
+/*
+created by: Greg Buckner
+client: Startup Matchmaker
+1/7/2016
+*/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Helpers */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+
+/* Base Styles */
+
+h1 {
+  font-size: 2em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: yellow;
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+}
+
+/* Layout */
+
+header {
+  color: white;
+  background: black;
+  border-bottom: 4px solid yellow;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 1;
+}
+
+#tagline {
+  background: #C6C6C6;
+  border-top: 1px solid #AAA;
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* Additional Styles */
+
+header h1 {
+  color: yellow;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em;
+}
+
+header nav {
+  float: right;
+}
+
+header nav li {
+  float: left;
+}
+
+header nav a {
+  display: block;
+  padding: 0 15px;
+}
+
+header nav a:hover {
+  color: yellow;
+}
+
+header strong {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+#tagline p {
+  font-size: 1.2em;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+#tagline del {
+  color: #999;
+
+}
+
+#tagline ins {
+  text-decoration: none;
+  border-bottom: 3px solid yellow;
+}
+
+#banner {
+  background: url(../images/coworking.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 3%;
+}
+
+#blurb {
+  background: rgba(255,255,255,.8);
+  width: 34%;
+  margin: 0 auto;
+  padding: 4%;
+  position: relative;
+  left: 270px;
+  top: 5px;
+  z-index:0;
+}
+
+#ctas {
+  background: #EEE;
+  background: white;
+  overflow: hidden;
+  padding: 2% 0;
+}
+
+.cta {
+  width: 27.3333%;
+  padding: 2% 3%;
+}
+
+.cta .button {
+  background: #C6C6C6;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 2% 3%;
+}
