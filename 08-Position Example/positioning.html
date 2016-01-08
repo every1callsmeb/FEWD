@@ -8,23 +8,23 @@
 		<style type="text/css">
 			div#road {
 				width: 960px;
-				margin: 20px auto;
+				margin: 100px auto;
 				height: 5000px;
 				border: 2px solid #000;
 				background-color: black;
-				position: relative;
+				/*position: relative;*/
 			}
 
 			#blue {
 				border: 1px dotted green;
-				position: fixed;
+				/*position: fixed;*/
 				left: 40%;
 				top: 40%;
 				z-index: 0;
 			}
 
 			#red {
-				position: fixed;
+				/*position: fixed;*/
 				left: 400px;
 				top: 400px;
 				margin-bottom: 20px;
@@ -32,9 +32,32 @@
 				z-index: 1;
 			}
 
+			#orange {
+				/*position: fixed;*/
+				left: 300px;
+				top: 400px;
+				margin-bottom: 20px;
+				border: 1px solid green;
+				z-index: 2;
+			}
+
+			header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: #efefef;
+				margin: 0;
+				padding: 20px;
+			}
+
 		</style>
 	</head>
 		<body>
+			<header>
+				<h1>Welcome to Auto Trader</h1>
+			</header>
+
 			<div id="road">
 				<div id="red">
 					<img src="car.png">
@@ -42,6 +65,10 @@
 
 				<div id="blue">
 					<img src="car-2.png">
+				</div>
+
+				<div id="orange">
+					<img src="car-3.png">
 				</div>
 			</div>
 		</body>
