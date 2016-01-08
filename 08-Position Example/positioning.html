@@ -7,44 +7,42 @@
 
 		<style type="text/css">
 			div#road {
-				width: 500px;
+				width: 960px;
 				margin: 20px auto;
-				height: 1000px;
+				height: 5000px;
 				border: 2px solid #000;
 				background-color: black;
-				margin-top: 500px;
 				position: relative;
 			}
 
-			/*if we move the parent, the absolute object should move with it if the parent position is relative.*/
-
 			#blue {
-				/*position: relative;
-				top: 100px;
-				left: 100px;*/
-				margin-bottom: 20px;
 				border: 1px dotted green;
+				position: fixed;
+				left: 40%;
+				top: 40%;
+				z-index: 0;
 			}
 
 			#red {
-				position: absolute;
-				right:300px;
-				top: 200px;
+				position: fixed;
+				left: 400px;
+				top: 400px;
 				margin-bottom: 20px;
 				border: 1px solid green;
+				z-index: 1;
 			}
 
 		</style>
 	</head>
-	<body>
-		<div id="road">
-			<div id="red">
-				<img src="car.png">
-			</div>
+		<body>
+			<div id="road">
+				<div id="red">
+					<img src="car.png">
+				</div>
 
-			<div id="blue">
-				<img src="car-2.png">
+				<div id="blue">
+					<img src="car-2.png">
+				</div>
 			</div>
-		</div>
-	</body>
+		</body>
 </html>
