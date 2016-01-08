@@ -93,7 +93,7 @@ header h1 {
 }
 
 nav {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px;
   font-size: 20px;
   font-weight: 400;
   float: right;
@@ -244,4 +244,65 @@ footer .logo {
 
 .yellow {
   color: #f9e42e;
+}
+
+/******************************************
+/* Mobile
+/*******************************************/
+
+@media only screen and (max-width: 500px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  header {
+    margin-bottom: 15px;
+  }
+
+  nav {
+    padding: 15px 0px;
+  }
+
+  section {
+      width: 100%
+  }
+
+  section h1 {
+    font-size: 24px;
+  }
+
+  article {
+    padding: 0px 5px;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  .read-more {
+    font-size: 22px;
+  }
+
+  aside {
+    width: 100%;
+    padding: 0px 5px;
+  }
+
+  .side-block img {
+    display: none;
+  }
+
+
+
+
+
+
+
+
 }
