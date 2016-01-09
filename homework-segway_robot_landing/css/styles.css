@@ -59,8 +59,20 @@ a {
 /* LAYOUT
 /*******************************************/
 
+hero {
 
 
+
+}
+.container {
+
+
+}
+
+#segway-tour {
+  background: url(../images/print3.jpg) center 0 no-repeat;
+  height: 450px;
+}
 
 
 /******************************************
