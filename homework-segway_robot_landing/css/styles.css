@@ -33,6 +33,14 @@
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+.spacer-single {
+    width: 100%;
+    height: 10px;
+    display: block;
+    clear: both;
+  }
+
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -54,20 +62,26 @@ a {
   color: #01214C;
 }
 
+.container {
+  width: 1400px;
+  margin: 0 auto;
+
+}
+
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
-hero {
-
+#hero {
+  width: 100%;
+  height: 1265px;
+  overflow: auto;
+  background: url(../images/dog_and_robot.png);
 
 
 }
-.container {
 
-
-}
 
 #segway-tour {
   background: url(../images/print3.jpg) center 0 no-repeat;
