@@ -213,7 +213,6 @@ header li:last-child{
 #product-tour {
   height: 740px;
   background: url(../images/print4.jpg) center 0 no-repeat;
-
 }
 
 #product-tour h1 {
@@ -226,18 +225,93 @@ header li:last-child{
   text-align: center;
 }
 
+
 #segway-stats {
-  margin: 0 auto;
+  height: 650px;
+  background: url(../images/bg-3.jpg) bottom no-repeat;
 }
 
-#segway-stats h1 {
-
+#segway-stat-block {
+  padding-top: 180px;
 }
 
+#segway-stats h3 {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+hr {
+  color: #4DD9FD;
+  width: 10%;
+}
+
+#segway-stats ul {
+  padding: 0px;
+  text-align: center;
+}
+
+#segway-stats li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+.stats {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.sub-stats {
+  color: #4DD9FD;
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+
+#extendable-robot{
+  height: 580px;
+  background: url(../images/print6.jpg) bottom no-repeat;
+}
+
+#extendable-robot-left{
+  position: relative;
+  top: 150px;
+  width: 50%;
+}
+
+#extendable-robot h2 {
+  color: #6B6B6B;
+  text-align: center;
+}
+
+#extendable-robot p {
+  text-align: center;
+}
+
+.small-caps {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
 
 #robot-life img {
   text-align: center;
   width: 33.3%;
+}
+
+#partners {
+  background: #000;
+}
+
+#developers {
+  background: url(../images/bg-2.jpg) bottom repeat;
+
+}
+footer{
+  background: #000;
 }
 /******************************************
 /* Mobile
