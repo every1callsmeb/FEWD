@@ -188,6 +188,18 @@ header li a:active, a:hover {
   width: 15%;
 }
 
+#product-tour h1 {
+  text-align: center;
+}
+
+#segway-stats {
+  margin: 0 auto;
+}
+
+#segway-stats h1 {
+
+}
+
 /******************************************
 /* Mobile
 /*******************************************/
