@@ -46,9 +46,10 @@
 /*******************************************/
 
 body {
-     background: #F2F6F5;
+     background: #fff;
      font-family: 'Open Sans', sans-serif;
      font-size: 24px;
+     font-weight: 400;
      line-height: 1.4;
      color: #000;
 }
@@ -59,13 +60,19 @@ h1, h3, ul {
 
 a {
   text-decoration: none;
-  color: #01214C;
 }
 
 .container {
   width: 1400px;
   margin: 0 auto;
 
+}
+
+.button {
+  background: #4DD8FD;
+  padding: 15px 30px;
+  color: white;
+  font-size: 15px;
 }
 
 
@@ -78,16 +85,108 @@ a {
   height: 1265px;
   overflow: auto;
   background: url(../images/dog_and_robot.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 15px solid #000;
+}
 
+header {
+  margin-top: 15px;
+  background: #000;
+}
+
+#logo {
+  float: left;
+  width: 50%;
 
 }
 
+nav {
+  float: right;
+}
+
+
+header ul{
+  padding: 0px;
+  color: #fff;
+
+}
+
+header li{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-left: 40px;
+}
+
+header li a {
+  color: #fff;
+  font-weight: 400;
+}
+
+header li a:active, a:hover {
+  color: #4DD9FD;
+}
+
+#hero h1 {
+  margin: 0 auto;
+  margin-top: 30%;
+  width: 50%;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+}
+
+#hero h4 {
+  margin: 5px auto;
+  width: 75%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+#meet-segway{
+  margin-top: 30px;
+}
+
+#meet-segway-left{
+  width: 50%;
+  float: left;
+}
+
+#meet-segway-right{
+  width: 50%;
+  float: right;
+}
 
 #segway-tour {
+  margin-top: 30px;
   background: url(../images/print3.jpg) center 0 no-repeat;
   height: 450px;
 }
 
+.feature-block {
+  float: left;
+  margin: 2%;
+  width: 20%;
+  font-size: 15px;
+}
+
+.feature-block h3 {
+  font-size: 20px;
+}
+
+.feature-block img {
+  width: 15%;
+}
 
 /******************************************
 /* Mobile

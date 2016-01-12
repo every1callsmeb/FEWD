@@ -14,139 +14,154 @@
 
   <body>
 
-		<div id="hero">
-			<header>
-				  <div class="container">
-						<div id="logo"><img src="images/logo.png">
-						<nav>
-							<ul>
-								<li><a href="#">Welcome</a></li>
-								<li><a href="#">Meet the robot</a></li>
-								<li><a href="#">Skills</a></li>
-								<li><a href="#">Developer</a></li>
-							</ul>
-						</nav>
-					</div>
-					</div>
-			<header>
-				<h1 id="slogan">The future is interesting</h1>
-				<h4 id="slogan-subtext">Reimagine segway in a robotic world</h4>
 
+		<div id="hero">
+			<!-- <div class="container"> -->
+				<header>
+							<div class="container">
+							<div id="logo">
+								<img src="images/logo.png">
+							</div>
+							<nav>
+								<ul>
+									<li><a href="#">Welcome</a></li>
+									<li><a href="#">Meet the robot</a></li>
+									<li><a href="#">Skills</a></li>
+									<li><a href="#">Developer</a></li>
+								</ul>
+							</nav>
+						</div>
+				</header>
+			<!-- </div> -->
+
+			<div class="container">
+					<!-- how do a match comp for exact width without guessing? -->
+
+
+					<h1 id="slogan">The future is interesting</h1>
+					<h4 id="slogan-subtext">Reimagine segway in a robotic world</h4>
+			</div>
 		</div> <!-- id="hero" END -->
 
 		<section id="meet-segway">
-			<div id="meet-segway-left">
-				<video src="/Public/video/gif_1.mp4" autoplay="" style="width:700px;height:40px;" class="video3"></video>
+			<div class="container">
+				<div id="meet-segway-left">
+				</div>
+
+				<div id="meet-segway-right">
+					<h2> A Segway Robot</h2>
+					<p> A Segway that sees the world and a robot that gives you a ride. Segway Robot can navigate and follow, and he is extendable with many exciting possibilities. The future is interesting!</p>
+
+					<p>Create with us. The SDK will be released with developer kit. Join our developer list to get notified of new development and opportunities.</p>
+
+					<a class="button" href="#">Join Us</a>
+				</div>
 			</div>
 
-			<div id="meet-segway-right">
-				<h2> A Segway Robot</h2>
-				<p> A Segway that sees the world and a robot that gives you a ride. Segway Robot can navigate and follow, and he is extendable with many exciting possibilities. The future is interesting!</p>
+		</section> <!-- id="meet-segway" END -->
 
-				<p>Create with us. The SDK will be released with developer kit. Join our developer list to get notified of new development and opportunities.</p>
-
-				<a class="button" href="#">Join Us</a>
+		<section class="clear" id="segway-tour">
+			<div class="container">
+				<h2 class="alignleft">Take a ride. Sure.</h2>
+				<h2 class="alignright">Want to have more?</h2>
 			</div>
-
-		<section>
-
-		<section id="segway-tour">
-			<h2>Take a ride. Sure.</h2>
-			<h2>Want to have more?</h2>
 		</section>
 
 		<section id="features">
-			<div class="feature-block">
-				<div class="feature-icon">
-					<img src="images/3D-vision.png">
-				</div>
-				<h3>See in 3D</h3>
-				<p>Intel RealSense RGB-D camera enables depth sensing. Great for development on object recognition, tracking and other cool projects.</p>
-			</div>
+				<div class="container">
+					<div class="feature-block">
+						<div class="feature-icon">
+							<img src="images/3D-vision.png">
+						</div>
+						<h3>See in 3D</h3>
+						<p>Intel RealSense RGB-D camera enables depth sensing. Great for development on object recognition, tracking and other cool projects.</p>
+					</div>
 
-			<div class="feature-block">
-				<div class="feature-icon">
-					<img src="images/slam.png">
-				</div>
-				<h3>Move Free</h3>
-				<p>Control multiple motors to move the robot and see the world in different angles, while the robot is continuously self-balancing.</p>
-			</div>
+					<div class="feature-block">
+						<div class="feature-icon">
+							<img src="images/slam.png">
+						</div>
+						<h3>Move Free</h3>
+						<p>Control multiple motors to move the robot and see the world in different angles, while the robot is continuously self-balancing.</p>
+					</div>
 
-			<div class="feature-block">
-				<div class="feature-icon">
-					<img src="images/follow.png">
-				</div>
-				<h3>Track and Follow</h3>
-				<p>Multiple cameras and sensors enable Simultaneous Localization and Mapping. Track and follow makes it interesting to take out for a ride.</p>
-			</div>
+					<div class="feature-block">
+						<div class="feature-icon">
+							<img src="images/follow.png">
+						</div>
+						<h3>Track and Follow</h3>
+						<p>Multiple cameras and sensors enable Simultaneous Localization and Mapping. Track and follow makes it interesting to take out for a ride.</p>
+					</div>
 
-			<div class="feature-block">
-				<div class="feature-icon">
-					<img src="images/IOT.png">
-				</div>
-				<h3>Connect</h3>
-				<p>Being able to connect to other smart hardware let you easily monitor your home and things you care.</p>
-			</div>
+					<div class="feature-block">
+						<div class="feature-icon">
+							<img src="images/IOT.png">
+						</div>
+						<h3>Connect</h3>
+						<p>Being able to connect to other smart hardware let you easily monitor your home and things you care.</p>
+					</div>
 
-			<div class="feature-block">
-				<div class="feature-icon">
-					<img src="images/SDK2.png">
-				</div>
-				<h3>Platform</h3>
-				<p>Open SDK on Android platform gives you much freedom in developing new applications.</p>
-			</div>
+					<div class="feature-block">
+						<div class="feature-icon">
+							<img src="images/SDK2.png">
+						</div>
+						<h3>Platform</h3>
+						<p>Open SDK on Android platform gives you much freedom in developing new applications.</p>
+					</div>
 
-			<div class="feature-block">
-				<div class="feature-icon">
-					<img src="images/mic.png">
-				</div>
-				<h3>Talk to me</h3>
-				<p>Microphone array let you send voice command to Segway robot from anywhere in the room.</p>
-			</div>
+					<div class="feature-block">
+						<div class="feature-icon">
+							<img src="images/mic.png">
+						</div>
+						<h3>Talk to me</h3>
+						<p>Microphone array let you send voice command to Segway robot from anywhere in the room.</p>
+					</div>
 
-			<div class="feature-block">
-				<div class="feature-icon">
-					<img src="images/module.png">
-				</div>
-				<h3>Extendable</h3>
-				<p>Interface for hardware extensions let you make something awesome, and communicate with the accessory using SDK</p>
-			</div>
+					<div class="feature-block">
+						<div class="feature-icon">
+							<img src="images/module.png">
+						</div>
+						<h3>Extendable</h3>
+						<p>Interface for hardware extensions let you make something awesome, and communicate with the accessory using SDK</p>
+					</div>
 
-			<div class="feature-block">
-				<div class="feature-icon">
-					<img src="images/CPU.png">
-				</div>
-				<h3>Powerful</h3>
-				<p>Intel Atom processor makes these applications possible.  GPU acceleration is available for vision algorithms.</p>
-			</div>
+					<div class="feature-block">
+						<div class="feature-icon">
+							<img src="images/CPU.png">
+						</div>
+						<h3>Powerful</h3>
+						<p>Intel Atom processor makes these applications possible.  GPU acceleration is available for vision algorithms.</p>
+					</div>
+		 		</div>
 
 		</section>  <!-- id="features" END -->
 
 
-		<section id="product-tour">
-
-			<h1> SEE. RECOGNIZE. NAVIGATE. <h1>
-			<h3> INTEL ATOM PROCESSOR | MULTIPLE CAMERAS | INTEGRATED DEPTH SENSING </h3>
-
+		<section class="clear" id="product-tour">
+				<div class="container">
+					<h1> SEE. RECOGNIZE. NAVIGATE. <h1>
+					<h3> INTEL ATOM PROCESSOR | MULTIPLE CAMERAS | INTEGRATED DEPTH SENSING </h3>
+				</div>
 		</section> <!-- id="product-tour" END -->
 
 		<section id ="segway-stats">
-
-			<h3>OWN A SEGWAY BASE</h3>
-			<ul>
-				<li><p class="stats">800W</p> <p class="sub-stats">rated power, double motors</p></li>
-				<li><p class="stats">18km/h</p> <p class="sub-stats">comfort speed</p></li>
-				<li><p class="stats">70Nm</p> <p class="sub-stats">maximum torque</p></li>
-				<li><p class="stats">30Km</p> <p class="sub-stats">maximum single trip distance</p></li>
-			</ul>
-
+			 <div class="container">
+				<h3>OWN A SEGWAY BASE</h3>
+				<ul>
+					<li><p class="stats">800W</p> <p class="sub-stats">rated power, double motors</p></li>
+					<li><p class="stats">18km/h</p> <p class="sub-stats">comfort speed</p></li>
+					<li><p class="stats">70Nm</p> <p class="sub-stats">maximum torque</p></li>
+					<li><p class="stats">30Km</p> <p class="sub-stats">maximum single trip distance</p></li>
+				</ul>
+			</div>
 		</section> <!-- id="segeway-stats" END -->
 
 		<section id="extendable-robot">
-			<h2> An extendable robot</h2>
-			<p class="small-caps">for there are many possibilities out there.</p>
-			<p class="small-caps">what would you like yoru gears to be?</p>
-
+			<div class="container">
+				<h2> An extendable robot</h2>
+				<p class="small-caps">for there are many possibilities out there.</p>
+				<p class="small-caps">what would you like yoru gears to be?</p>
+			</div>
 		</section> <!-- id="extendable-robot"-->
 
 		<section id="robot-life">
@@ -157,37 +172,40 @@
 		</section> <!-- id="robot-life"-->
 
 		<section id="partners">
-			<ul>
-				<li><img src="/images/partners_1.png"></li>
-				<li><img src="/images/partners_2.png"></li>
-				<li><img src="/images/partners_3.png"></li>
-			</ul>
-
+			<div class="container">
+				<ul>
+					<li><img src="/images/partners_1.png"></li>
+					<li><img src="/images/partners_2.png"></li>
+					<li><img src="/images/partners_3.png"></li>
+				</ul>
+			</div>
 		</section> <!-- id="partners" -->
 
 		<section id="developers">
+			<div class="container">
+					<div id="developer-program">
 
-			<div id="developer-program">
-
-			<ul>
-				<li><img src="/images/partners_1.png"></li>
-				<li><img src="/images/partners_2.png"></li>
-				<li><img src="/images/partners_3.png"></li>
-			</ul>
-
+					<ul>
+						<li><img src="/images/partners_1.png"></li>
+						<li><img src="/images/partners_2.png"></li>
+						<li><img src="/images/partners_3.png"></li>
+					</ul>
+				</div>
+			</div>
 		</section> <!-- id="partners" -->
 
 		<footer>
+			<div class="container">
 
-			<ul id="social-icons">
-				<li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-				<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-			</ul>
+				<ul id="social-icons">
+					<li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+				</ul>
 
-			<div id="copyright">Copyright 2016 - Segway, Inc.</div>
-			<p> <a href="#">robotsegway.com</a> | <a href="#">Download Press Kit</a></p>
-
+				<div id="copyright">Copyright 2016 - Segway, Inc.</div>
+				<p> <a href="#">robotsegway.com</a> | <a href="#">Download Press Kit</a></p>
+		</div>
 		</footer>
 
 
