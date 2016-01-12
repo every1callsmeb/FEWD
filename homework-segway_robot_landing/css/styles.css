@@ -128,6 +128,13 @@ header li a:active, a:hover {
   color: #4DD9FD;
 }
 
+header li:last-child{
+  background: #4DD9FD;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+
 #hero h1 {
   margin: 0 auto;
   margin-top: 30%;
@@ -162,6 +169,11 @@ header li a:active, a:hover {
   float: left;
 }
 
+#meet-segway-left img {
+  position: relative;
+  top: 40px;
+}
+
 #meet-segway-right{
   width: 50%;
   float: right;
@@ -169,6 +181,7 @@ header li a:active, a:hover {
 
 #segway-tour {
   margin-top: 30px;
+  padding-top: 145px;
   background: url(../images/print3.jpg) center 0 no-repeat;
   height: 450px;
 }
@@ -185,10 +198,31 @@ header li a:active, a:hover {
 }
 
 .feature-block img {
-  width: 15%;
+  width: 45px;
+}
+
+.feature-icon {
+  float:left;
+}
+
+.feature-desc {
+  float:right;
+  width: 220px;
+}
+
+#product-tour {
+  height: 740px;
+  background: url(../images/print4.jpg) center 0 no-repeat;
+
 }
 
 #product-tour h1 {
+  color: #6B6B6B;
+  text-align: center;
+}
+
+#product-tour h3 {
+  color: #C8C8C8;
   text-align: center;
 }
 
@@ -200,6 +234,11 @@ header li a:active, a:hover {
 
 }
 
+
+#robot-life img {
+  text-align: center;
+  width: 33.3%;
+}
 /******************************************
 /* Mobile
 /*******************************************/
