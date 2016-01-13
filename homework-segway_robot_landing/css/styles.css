@@ -327,8 +327,28 @@ hr {
 #developers {
   height: 850px;
   background: url(../images/bg-2.jpg) bottom repeat;
-
 }
+
+#developer-program{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    border: none;
+    padding: 20px 30px 30px 30px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    font-size: 13px;
+    background: rgba(0,0,0,0.4);
+}
+
+#developer-program h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+
 footer{
   background: #000;
   text-align: center;
