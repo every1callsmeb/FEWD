@@ -85,6 +85,7 @@ a {
   height: 1265px;
   overflow: auto;
   background: url(../images/dog_and_robot.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 15px solid #000;
@@ -133,6 +134,7 @@ header li:last-child{
   padding: 15px;
   border-radius: 10px;
   color: #fff;
+  margin-left: 45px;
 }
 
 #hero h1 {

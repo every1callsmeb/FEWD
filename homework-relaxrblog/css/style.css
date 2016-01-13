@@ -250,7 +250,7 @@ footer .logo {
 /* Mobile
 /*******************************************/
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
   body {
     font-size: 20px;
@@ -270,7 +270,7 @@ footer .logo {
   }
 
   section {
-      width: 100%
+      width: 96%
   }
 
   section h1 {
@@ -290,7 +290,7 @@ footer .logo {
   }
 
   aside {
-    width: 100%;
+    width: 96%;
     padding: 0px 5px;
   }
 
