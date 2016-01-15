@@ -1,14 +1,16 @@
 $('#grayButton').click(switchGray);
-
 // document.getElementById('grayButton').onclick = switchGray;
-document.getElementById('whiteButton').onclick = switchWhite;
-document.getElementById('blueButton').onclick = switchBlue;
-document.getElementById('paragraph').onclick = switchParagraph;
+$('#whiteButton').click(switchWhite);
+// document.getElementById('whiteButton').onclick = switchWhite;
+$('#blueButton').click(switchBlue);
+// document.getElementById('blueButton').onclick = switchBlue;
+$('#paragraph').click(switchParagraph);
+// document.getElementById('paragraph').onclick = switchParagraph;
 
 function switchParagraph() {
   document.body.style.backgroundColor = 'red';
   document.body.style.color = 'white';
-  document.getElementById('paragraph').style.color ='yellow';
+  document.getElementById('paragraph').style.color ='blue';
 }
 
 function switchGray() {
