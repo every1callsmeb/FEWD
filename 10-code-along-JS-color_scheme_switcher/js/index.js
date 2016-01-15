@@ -5,6 +5,7 @@ document.getElementById('blueButton').onclick = switchBlue;
 function switchGray() {
  document.body.style.backgroundColor = 'gray';
  document.body.style.color = 'white';
+ document.getElementById('paragraph').style.color ='red';
 }
 
 function switchWhite() {
@@ -12,11 +13,13 @@ function switchWhite() {
   console.log('switchWhiteCalled');
   document.body.style.backgroundColor = 'white';
   document.body.style.color = 'black';
+  document.getElementById('paragraph').style.color ='red'
 }
 
 function switchBlue() {
   document.body.style.backgroundColor = 'blue';
   document.body.style.color = 'white';
+  document.getElementById('paragraph').style.color ='red'
 }
 
 console.log()
