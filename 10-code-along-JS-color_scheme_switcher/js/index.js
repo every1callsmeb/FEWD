@@ -1,8 +1,9 @@
-document.getElementById('grayButton').onclick = switchGray;
+$('#grayButton').click(switchGray);
+
+// document.getElementById('grayButton').onclick = switchGray;
 document.getElementById('whiteButton').onclick = switchWhite;
 document.getElementById('blueButton').onclick = switchBlue;
 document.getElementById('paragraph').onclick = switchParagraph;
-
 
 function switchParagraph() {
   document.body.style.backgroundColor = 'red';
@@ -13,7 +14,7 @@ function switchParagraph() {
 function switchGray() {
  document.body.style.backgroundColor = 'gray';
  document.body.style.color = 'white';
- document.getElementById('paragraph').style.color ='red';
+ document.getElementById('paragraph').style.color ='yellow';
 }
 
 function switchWhite() {
