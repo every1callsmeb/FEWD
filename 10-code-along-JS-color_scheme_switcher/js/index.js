@@ -1,6 +1,14 @@
 document.getElementById('grayButton').onclick = switchGray;
 document.getElementById('whiteButton').onclick = switchWhite;
 document.getElementById('blueButton').onclick = switchBlue;
+document.getElementById('paragraph').onclick = switchParagraph;
+
+
+function switchParagraph() {
+  document.body.style.backgroundColor = 'red';
+  document.body.style.color = 'white';
+  document.getElementById('paragraph').style.color ='yellow';
+}
 
 function switchGray() {
  document.body.style.backgroundColor = 'gray';
