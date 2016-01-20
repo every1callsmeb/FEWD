@@ -9,7 +9,6 @@ $('#question3').click(toggleFAQ3);
 
 function toggleFAQ1(){
   $('#answer1').toggle();
-
 }
 
 function toggleFAQ2(){
