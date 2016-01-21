@@ -148,7 +148,7 @@ article p .first-character{
   padding: 4px 8px 0px 3px;
 }
 
-.read-more {
+.read-more1, .read-more2, .show-less1, .show-less2 {
   font-weight: 600px;
   margin-bottom: 40px;
   text-align: right;
