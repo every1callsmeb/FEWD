@@ -10,6 +10,10 @@ $(".read-more2").click(more2);
 $(".show-less1").click(less1);
 $(".show-less2").click(less2);
 $("#learnMore").click(fnlearnMore);
+$(".read-more1").css("cursor","pointer");
+$(".read-more2").css("cursor","pointer");
+$(".show-less1").css("cursor","pointer");
+$(".show-less2").css("cursor","pointer");
 
 // Functions
 
