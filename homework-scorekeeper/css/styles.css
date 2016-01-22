@@ -25,12 +25,12 @@
 
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+
 }
 
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+
 }
 
 /******************************************
@@ -39,7 +39,7 @@
 
 body {
      background: #F2F6F5;
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Helvetica', 'Open Sans', sans-serif;
      font-size: 24px;
      line-height: 1.4;
      color: #000;
@@ -47,6 +47,10 @@ body {
 
 h1, h3, ul {
   margin: 0px;
+}
+
+h2 {
+  text-align: center;
 }
 
 a {
@@ -59,10 +63,46 @@ a {
 /* LAYOUT
 /*******************************************/
 
+#container {
+  width: 960px;
+  margin: 0 auto;
+  /*background: red;*/
+}
+
+#counterContainer{
+  margin: 0 20px;
+}
+
+#score {
+  padding: 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
 #score-label {
   margin-top: 50px;
   text-align: center;
   font-family:
+}
+
+#addOne, #subtractOne, #addFive, #subtractFive{
+  width: 440px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#addOne, #addFive {
+  background: green;
+}
+
+#subtractOne, #subtractFive{
+  background: red;
+}
+
+#resetButton{
+  background: red;
+  color: #FFF;
+  border-radius: 5px;
+  width: 100%;
 }
 
 span {

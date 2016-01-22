@@ -13,41 +13,44 @@
   </head>
 
   <body>
-
+<div id="container">
     <div id="score">
-			<h1 id="score-label">Total : <span>000</span></h1>
+			<h1 id="score-label">Total : <span id="currentScore">000</span></h1>
   	</div>
 
+ <div id="counterContainer">
 		<div id="counterButton">
-			<div id="addOne">
+			<div  class="alignleft" id="addOne">
 				<h2 class="button green"> +1 </h2>
 			</div>
 		</div>
 
-			<div id="subtractOne">
+			<div class="alignleft" id="subtractOne">
 				<div>
 				<h2 class="button red"> -1 </h2>
 			</div>
 		</div>
 
 		<div id="counterButton">
-			<div id="addFive">
-				<h2 class="button green"> +5 </h2>
+			<div  class="alignleft"  id="addFive">
+				<h2 class="button"> +5 </h2>
 			</div>
 		</div>
 
-			<div id="subtractFive">
+			<div  class="alignleft" id="subtractFive">
 				<div>
 				<h2 class="button red"> -5 </h2>
 			</div>
 		</div>
 
 		<div id="counterButton">
-			<div id="resetButton">
+			<div class="alignleft" id="resetButton">
 				<h2 class="button red"> Reset </h2>
 			</div>
 		</div>
+</div>
 
+</div>
 		<script src="js/main.js"></script>
   </body>
 </html>
