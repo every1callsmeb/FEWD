@@ -65,8 +65,10 @@ a {
 
 #container {
   width: 960px;
-  margin: 0 auto;
-  /*background: red;*/
+  margin: 50px auto;
+  border: 1px solid #000;
+  height: 575px;
+  overflow: auto;
 }
 
 #counterContainer{
@@ -85,7 +87,7 @@ a {
 }
 
 #addOne, #subtractOne, #addFive, #subtractFive{
-  width: 440px;
+  width: 436px;
   padding: 10px;
   margin: 10px;
 }
