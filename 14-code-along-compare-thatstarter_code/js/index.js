@@ -12,12 +12,11 @@
 //Global Variables
 
 
-
 //Functions
 
 function compareValues(){
 
-  var valueA = $("#a").val();
+  var valueA = $("#a").val();  //added local variables to re-assign variable each time #submit is invoked.
   var valueB = $("#b").val();
 
   if(valueA > valueB){

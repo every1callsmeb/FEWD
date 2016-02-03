@@ -1,0 +1,53 @@
+body {
+  font-size: 100%;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3.0em;
+  margin-bottom: 50px;
+}
+
+input {
+  width: 88%;
+  margin: 0 5%; 
+  margin-bottom: 20px;
+  padding: 1%;
+  font-size: 2.0em;
+}
+
+button {
+  width: 90%;
+  margin: 0 5%;
+  color: white;
+  background-color: green;
+  border: 0;
+  padding: 20px;
+  font-size: 2.0em;
+  border-radius: 10px;
+}
+
+#farenheit {
+  display: block;
+  margin: 5%;
+  width: 90%;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.cold {
+  background-color: blue;
+}
+
+.mild {
+  background-color: yellow;
+}
+
+.hot {
+  background-color: red;
+}
