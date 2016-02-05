@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $('#image').attr('src', images[0])
+}); //wait for page to load before running this statement
+
+
 var index = 0 //similar to var total = 0 on cash register exercise
 var images = ["images/animal1.jpg", "images/animal2.jpg", "images/animal3.jpg", "images/animal4.jpg", "images/animal5.jpg", "images/animal6.jpg", "images/animal7.jpg"]
 var newSrc;
@@ -20,7 +25,6 @@ if (index < 6) {
   $('#image').attr('src', newSrc);} else {
     $('#next').hide();
   }
-
 }
 
 function prevImage(){
@@ -38,5 +42,4 @@ if (index > 0){
   $('#image').attr('src', newSrc);} else {
     $('#previous').hide();
   }
-
 }
