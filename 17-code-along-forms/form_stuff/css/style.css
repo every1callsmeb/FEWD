@@ -1,0 +1,14 @@
+.box {
+  margin: 20px;
+  padding: 10px;
+  float: left;
+  clear: both;
+}
+
+#blue {
+  border: 2px solid blue;
+}
+
+#red {
+  border: 2px solid red;
+}
