@@ -38,7 +38,8 @@
 /*******************************************/
 
 body {
-     background: #F2F6F5;
+     background: #fff;
+     margin-top: 230px;
      font-family: 'Open Sans', sans-serif;
      font-size: 24px;
      line-height: 1.4;
@@ -54,14 +55,90 @@ a {
   color: #01214C;
 }
 
+input {
+  border: none;
+  border-bottom: 2px solid #fff500;
+  background-color:transparent;
+  font-size: 24px;
+  height: 60px;
+  width: 50%;
+}
 
+input[placeholder] {
+  font-size: 14px;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
 
+header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  background: #222222;
+}
 
+#logo {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
 
+#logo h1 {
+  padding: 15px;
+  font-weight: 400;
+}
+
+#logo img {
+  margin-top: 15px;
+  width: 7.5%;
+}
+
+#scheduleInput {
+  overflow: auto;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+#scheduleLeft {
+  margin: 0 auto;
+  width: 40%;
+  float: left;
+}
+
+#scheduleRight {
+  margin: 0 auto;
+  width: 40%;
+  float: left;
+}
+
+#generateSchedule {
+  margin: 25px auto;
+  padding: 25px;
+  text-align: center;
+  clear: both;
+}
+
+#generateSchedule a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#generateSchedule span {
+  color: #37AC31;
+}
+
+#heatTimes {
+  background: blue;
+  width: 25%;
+  margin: 0 auto;
+}
 
 /******************************************
 /* Mobile
