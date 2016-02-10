@@ -8,9 +8,8 @@
 // for (var i = 0; i <10; i++) {document.write('<li>Heat ' + i + '</li>' );}
 // Reset Variables
 
-var heatList
+var heatList = [1,2,3]
 var totalHeats
-
 
 // Triggers
 

@@ -129,6 +129,7 @@ header {
 }
 
 #generateSchedule a {
+  cursor: pointer;
   text-transform: capitalize;
   text-decoration: none;
   border: 1px solid #37AC31;
@@ -152,7 +153,22 @@ header {
 /* Mobile
 /*******************************************/
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 1335px) {
+
+  #scheduleLeft {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  #scheduleRight {
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
 
   #logo {
     text-align: center;
