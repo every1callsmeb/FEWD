@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+			<title> Competition Corner Schedule Generator</title>
     	<meta charset="utf-8">
     	<meta name="description" content="Schedule Generator">
     	<meta name="keywords" content="scheduler">
@@ -37,25 +38,25 @@
 
 					<div>
 						<p>Start Time</p>
-						<span><input id="heats" placeholder="Start Time"></span>
+						<span><input id="startTime" placeholder="HH:MM"></span>
 					</div>
 			 </div>
 
 				<div id="scheduleRight">
 					<div>
 						<p>Event Duration</p>
-						<span><input id="heats" placeholder="Length of Event"></span>
+						<span><input id="eventDuration" placeholder="HH:MM"></span>
 					</div>
 
 					<div>
 						<p>Transition Time</p>
-						<span><input id="heats" placeholder="Transition Time Between Heats"></span>
+						<span><input id="transitionTime" placeholder="HH:MM"></span>
 					</div>
 				 </div>
 			 </div>
 
 				<div id="generateSchedule">
-					<a href="#">Generate <span class="fa fa-play-circle"></span> </a>
+					<a id="generateButton" href="#">Generate <span class="fa fa-play-circle"></span> </a>
 				</div>
 
 		</div>
@@ -68,6 +69,6 @@
 			</div>
 		</div>
 
-
+ 	<script src="js/main.js"></script>
   </body>
 </html>

@@ -91,7 +91,7 @@ header {
 }
 
 #logo h1 {
-  padding: 15px;
+  padding: 0px 15px 15px 15px;
   font-weight: 400;
 }
 
@@ -103,26 +103,27 @@ header {
 #scheduleInput {
   overflow: auto;
   padding-bottom: 25px;
-  border-bottom: 1px solid #e3e3e3;
+  margin: 0 auto;
 }
 
 #scheduleLeft {
-  margin: 0 auto;
-  width: 40%;
+  margin-left: 300px;
+  width: 35%;
   float: left;
 }
 
 #scheduleRight {
-  margin: 0 auto;
-  width: 40%;
+  width: 35%;
   float: left;
 }
 
 #generateSchedule {
+  width: 65%;
   margin: 25px auto;
   padding: 25px;
   text-align: center;
   clear: both;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 #generateSchedule a {
@@ -135,11 +136,13 @@ header {
 }
 
 #heatTimes {
-  background: blue;
   width: 25%;
   margin: 0 auto;
 }
 
+#heatTimes li {
+  list-style: none;
+}
 /******************************************
 /* Mobile
 /*******************************************/
