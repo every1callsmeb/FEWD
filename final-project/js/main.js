@@ -1,16 +1,16 @@
 // pseudo code
-// set array index based on Heat input
+// loop heatlist based on total heats
 // for each set manipulate html
 // concatenate "heat" + index
 // add array index in a <li> display in HTML
 
 // set array collection based on heat number input
-
+// for (var i = 0; i <10; i++) {document.write('<li>Heat ' + i + '</li>' );}
 // Reset Variables
 
-var i = 0 //set counter to 0
 var heatList
-var totalHeats = $("#heats").val();
+var totalHeats
+
 
 // Triggers
 
@@ -22,12 +22,26 @@ function calculateHeats () {
 
   var totalHeats = $("#heats").val();
 
-  while (i <= totalHeats) {
-    i = i + 1
-    heatList = '<li>Heat ' + i + '</li>';
-    i++;
+  // Loops until totalHeat value is reached
+
+  for (var i = 0; i < totalHeats; i++) {
+
+
+    $("#heatTimes").html('<li>Heat ' + i + '</li>' );
+
+
   }
+
+  // while (i <= totalHeats) {
+  //   i = i + 1
+  //   heatList = '<li>Heat ' + i + '</li>';
+  //   i++;
+  // }
+
   console.log(heatList);
+
+  // Write to HTML doc
+
   $("#heatTimes").html(heatList);
 };
 
