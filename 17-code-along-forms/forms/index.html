@@ -4,18 +4,48 @@
   	<meta charset="utf-8">
   	<meta name="description" content="Your description goes here">
   	<meta name="keywords" content="one, two, three">
-	
+
 		<title>Forms</title>
-		
+
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
-		
+
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	</head>  
+	</head>
 	<body>
-		
+
     <h1>Forms</h1>
+
+	 	<!-- Forms reside within a form tag -->
+		<!-- label tags are specifically for forms -->
+
+		<form method="GET">
+
+			<label for="name">Name</label>
+			<input type="text" id="name" placeholder="First Name" name="firstname">
+			<input type="text" id="name" placeholder="Last Name" name="lastname">
+			<input type ="submit" value="Sign Up">
+			
+				<!-- Two ways of adding a label HTML 5, you can nest an input in a label -->
+				<!-- <label>First Name	<input type = "text" placeholder="Your Name"> </label>
+
+				<!-- second way which is more universally compatibile and allows for independent styling-->
+
+			<!-- <label for="form-first-name">First Name	</label><input type = "text" placeholder="Your Name" id="form-first-name">
+
+
+			<input type ="password">
+			<input type ="email">
+			<input type ="checkbox">
+			<input type ="radio">
+			<input type ="file">
+			<input type ="button" value="Click Me">
+			<input type ="date">  -->
+
+
+		</form>
+
 
 		<script src="js/index.js"></script>
 	</body>
