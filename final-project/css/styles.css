@@ -66,7 +66,9 @@ input {
 
 input[placeholder] {
   font-size: 14px;
+  padding-left: 15px;
 }
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -123,12 +125,15 @@ header {
   padding: 25px;
   text-align: center;
   clear: both;
-  border-bottom: 1px solid #e3e3e3;
+  /*border-bottom: 1px solid #e3e3e3;*/
 }
 
 #generateSchedule a {
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
+  border: 1px solid #37AC31;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 #generateSchedule span {
@@ -147,12 +152,42 @@ header {
 /* Mobile
 /*******************************************/
 
+@media screen and (max-width: 500px) {
 
+  #logo {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+  }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #logo h1 {
+    font-size: 29px;
+    padding: 0px 15px 15px 15px;
+    font-weight: 400;
+  }
 
+  #logo img {
+    margin-top: 15px;
+    width: 25%;
+  }
 
+  #scheduleLeft {
+    margin-left: 0px;
+    width: 100%;
+  }
 
+  #scheduleRight {
+    width: 100%;
+  }
+
+  #generateSchedule a {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  input {
+    width: 100%;
+  }
 
 
 
