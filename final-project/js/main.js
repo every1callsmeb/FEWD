@@ -26,9 +26,7 @@ function calculateHeats () {
 
   for (var i = 0; i < totalHeats; i++) {
 
-
     $("#heatTimes").html('<li>Heat ' + i + '</li>' );
-
 
   }
 
