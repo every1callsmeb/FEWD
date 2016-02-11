@@ -21,7 +21,7 @@ $('button').click(function(){
       var kelvin = data.main.temp  //this pulls from nested data in "temp" field
       var f = (kelvin * 9/5)- 459.67;
       $('#location').html(city);
-      $('#current-temp').html('The curent weather in ' + city + ' is' + f + ' *f');
+      $('#current-temp').html('The curent weather in ' + city + ' is ' + f + ' *f');
     },
     error: function(data){
       console.log('Something bad happened');
