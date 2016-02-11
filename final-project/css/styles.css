@@ -84,6 +84,7 @@ header {
   right: 0px;
   width: 100%;
   background: #222222;
+  border-bottom: 2px solid #fff500;
 }
 
 #logo {
@@ -132,14 +133,32 @@ header {
   cursor: pointer;
   text-transform: capitalize;
   text-decoration: none;
-  border: 1px solid #37AC31;
+  border: 1px solid #e3e3e3;
   padding: 15px;
+  margin-left: 5px;
   border-radius: 5px;
 }
 
-#generateSchedule span {
+#generateButton span {
   color: #37AC31;
 }
+
+#resetButton span {
+  color: red;
+}
+
+#resetButton a {
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 1px solid red;
+  padding: 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+
+
 
 #heatTimes {
   width: 25%;
@@ -198,7 +217,7 @@ header {
 
   #generateSchedule a {
     font-size: 20px;
-    padding: 12px;
+    padding: 5px;
   }
 
   input {
