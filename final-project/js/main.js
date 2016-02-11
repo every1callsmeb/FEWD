@@ -25,8 +25,8 @@ $("#resetButton").click(reset);
 function calculateHeats () {
 
   while (counter <= totalHeats) {
-    heatList.push('<li>Heat ' + counter + '</li>'); //add counter to array group
     counter++; //increment counter
+    heatList.push('<li>Heat ' + counter + '</li>'); //add counter to array group
     $("#heatTimes").html('<li>Heat ' + heatList + '</li>' );  //write to html doc
   };
 };
@@ -38,4 +38,5 @@ function reset (){
   $("input[id=startTime").val("");
   $("input[id=eventDuration]").val("");
   $("input[id=transitionTime]").val("");
+  $("#heatTimes li").remove();
 }
