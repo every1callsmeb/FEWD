@@ -6,14 +6,13 @@
 
 // set array collection based on heat number input
 // for (var i = 0; i <10; i++) {document.write('<li>Heat ' + i + '</li>' );}
-// Reset Variables
 
-// var heatList = [1,2,3]
-// var totalHeats
+// BUGS to resolve
+// if user changes # of heats, it needs to reset the heat output
+// initial heat generation adds Heat 0
 
   var counter = 0 //counter index
   var seconds = 0 // holder to convert time to seconds
-
 
 // Triggers
 
@@ -28,19 +27,32 @@ function calculateHeats () {
   var heatList = []; //set an empty array that'll be filled via counter loop
   var eventDuration = $("#eventDuration").val();
   var transitionTime = $("#transitionTime").val();
-  var startTime = $("#startTime").val();
+  var var_startTime = $("#startTime").val();
+  var eventLength
 
-  while (counter <= totalHeats) {
+
+  while (counter < totalHeats) {
+    // normalize startTime to minutes split HH from MM, HH = 60 minutes + MM
+
+
+    // startSeconds = startTime.split(':');
+
+
+    // startTime + eventDuration + transitionTime
+
+    counter++; //increment counter
     heatList.push('<li>Heat ' + counter + '</li>'); //add counter to array group
     $("#heatTimes").html(heatList);  //write to html doc
-    counter++; //increment counter
 
   };
 
-  console.log("eventDuration is: "+$("#eventDuration").val());
-  console.log("transitionTime is: "+$("#transitionTime").val());
-  console.log("startTime is: "+$("#startTime").val());
-  
+  eventLength = eventDuration + transitionTime;
+
+  console.log("eventDuration is: "+ eventDuration);
+  console.log("transitionTime is: "+ transitionTime);
+  console.log("startTime is: "+ var_startTime);
+  console.log("eventDuration + transitionTime is: "+ eventLength);
+
 };
 
 function reset (){
