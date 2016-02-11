@@ -8,8 +8,8 @@
 // for (var i = 0; i <10; i++) {document.write('<li>Heat ' + i + '</li>' );}
 // Reset Variables
 
-var heatList = [1,2,3]
-var totalHeats
+// var heatList = [1,2,3]
+// var totalHeats
 
 // Triggers
 
@@ -21,26 +21,22 @@ function calculateHeats () {
 
   var totalHeats = $("#heats").val();
 
-  // Loops until totalHeat value is reached
+  //create counter off heat value to create array
 
-  for (var i = 0; i < totalHeats; i++) {
+  var heatList = [];
+  var counter = -1 //counter index
 
-    $("#heatTimes").html('<li>Heat ' + i + '</li>' );
+  while (counter <= totalHeats) {
+    heatList.push('<li>Heat ' + counter + '</li>');
+    counter++; //increment counter
+    $("#heatTimes").html('<li>Heat ' + heatList + '</li>' );  //write to html doc
+  };
 
-  }
 
-  // while (i <= totalHeats) {
-  //   i = i + 1
-  //   heatList = '<li>Heat ' + i + '</li>';
-  //   i++;
-  // }
+    console.log(index);
 
-  console.log(heatList);
 
-  // Write to HTML doc
 
-  $("#heatTimes").html(heatList);
-};
 
 
 
