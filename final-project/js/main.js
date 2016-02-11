@@ -11,9 +11,9 @@
 // var heatList = [1,2,3]
 // var totalHeats
 
-var totalHeats = $("#heats").val();//create counter off heat value to create array
-var heatList = []; //set an empty array that'll be filled via counter loop
-var counter = 0 //counter index
+  var counter = 0 //counter index
+  var seconds = 0 // holder to convert time to seconds
+
 
 // Triggers
 
@@ -24,11 +24,23 @@ $("#resetButton").click(reset);
 
 function calculateHeats () {
 
+  var totalHeats = $("#heats").val();//create counter off heat value to create array
+  var heatList = []; //set an empty array that'll be filled via counter loop
+  var eventDuration = $("#eventDuration").val();
+  var transitionTime = $("#transitionTime").val();
+  var startTime = $("#startTime").val();
+
   while (counter <= totalHeats) {
-    counter++; //increment counter
     heatList.push('<li>Heat ' + counter + '</li>'); //add counter to array group
-    $("#heatTimes").html('<li>Heat ' + heatList + '</li>' );  //write to html doc
+    $("#heatTimes").html(heatList);  //write to html doc
+    counter++; //increment counter
+
   };
+
+  console.log("eventDuration is: "+$("#eventDuration").val());
+  console.log("transitionTime is: "+$("#transitionTime").val());
+  console.log("startTime is: "+$("#startTime").val());
+  
 };
 
 function reset (){
