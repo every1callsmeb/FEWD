@@ -158,8 +158,6 @@ header {
 }
 
 
-
-
 #heatTimes {
   width: 25%;
   margin: 0 auto;
@@ -167,6 +165,10 @@ header {
 
 #heatTimes li {
   list-style: none;
+}
+
+.heatPadding {
+  margin-left: 75px;
 }
 /******************************************
 /* Mobile
@@ -182,6 +184,10 @@ header {
 
   #scheduleRight {
     width: 100%;
+  }
+
+  .heatPadding {
+    margin-left: 5px;
   }
 
 }
@@ -218,6 +224,10 @@ header {
   #generateSchedule a {
     font-size: 20px;
     padding: 5px;
+  }
+
+  .heatPadding {
+    margin-left: 0px;
   }
 
   input {
