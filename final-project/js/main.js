@@ -9,6 +9,10 @@
 // BUGS to resolve
 // if user changes # of heats, it needs to reset the heat output
 
+
+//FEATURES
+// add field validation
+
   var counter = 0 //counter index
   var seconds = 0 // holder to convert time to seconds
 
@@ -26,23 +30,35 @@ function calculateHeats () {
   var eventDuration = $("#eventDuration").val();
   var transitionTime = $("#transitionTime").val();
   var var_startTime = $("#startTime").val();
-  var totalDuration
+  var totalDuration;
+
+
+  newtime = var_startTime.split(":");
+
+  var hour = newtime[0];
+  var minutes =  newtime[1];
+
+  console.log(newtime);
+  console.log("hour" + hour);
+  console.log("minutes" + minutes);
 
 
   while (counter < totalHeats) {
     // normalize startTime to minutes split HH from MM, HH = 60 minutes + MM
 
 
-    // startSeconds = startTime.split(':');
-
 
     // startTime + eventDuration + transitionTime
 
 
+
+    // loop NewTime and add to heatList array
+
+
     counter++; //increment counter
     totalDuration = Number(eventDuration) + Number(transitionTime);
-    console.log("eventDuration + transitionTime is: "+ eventLength);
-    heatList.push('<li>Heat ' + counter + ': <span class= \"heatPadding\" >'+ eventLength +'</span></li>'); //add counter to array group
+    console.log("eventDuration + transitionTime is: "+ totalDuration);
+    heatList.push('<li>Heat ' + counter + ': <span class= \"heatPadding\" >'+ totalDuration +'</span></li>'); //add counter to array group
     $("#heatTimes").html(heatList);  //write to html doc
 
   };
