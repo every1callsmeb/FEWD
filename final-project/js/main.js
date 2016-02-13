@@ -23,6 +23,17 @@ $("#resetButton").click(reset);
 
 // Functions
 
+function convertTime() {
+  var stringStartTime = $("#startTime").val();
+
+  parseTime = stringStartTime.split(":");
+  hour = parseTime[0];
+  minutes = parseTime[1];
+
+  totalMinutes = (parseInt(hour)*60) + parseInt(minutes);
+  // console.log(totalMinutes);
+}
+
 function calculateHeats () {
 
   var totalHeats = $("#heats").val();//create counter off heat value to create array
@@ -32,40 +43,34 @@ function calculateHeats () {
   var var_startTime = $("#startTime").val();
   var totalDuration;
 
+  var stringStartTime = $("#startTime").val();
 
-  newtime = var_startTime.split(":");
+  // convert stringTime to integer so I can calculate the values
 
-  var hour = newtime[0];
-  var minutes =  newtime[1];
+  parseTime = stringStartTime.split(":");
+  hour = parseTime[0];
+  minutes = parseTime[1];
 
-  console.log(newtime);
-  console.log("hour" + hour);
-  console.log("minutes" + minutes);
-
+  totalMinutes = (parseInt(hour)*60) + parseInt(minutes);
 
   while (counter < totalHeats) {
     // normalize startTime to minutes split HH from MM, HH = 60 minutes + MM
-
-
-
-    // startTime + eventDuration + transitionTime
-
-
-
-    // loop NewTime and add to heatList array
-
-
-    counter++; //increment counter
-    totalDuration = Number(eventDuration) + Number(transitionTime);
+    totalDuration = totalMinutes + Number(eventDuration) + Number(transitionTime);
     console.log("eventDuration + transitionTime is: "+ totalDuration);
+
+    // i need to convert minutes back into time into the newHeatTime
+
+    
+
+    counter++; //increment heat number
     heatList.push('<li>Heat ' + counter + ': <span class= \"heatPadding\" >'+ totalDuration +'</span></li>'); //add counter to array group
     $("#heatTimes").html(heatList);  //write to html doc
 
   };
-
-  console.log("eventDuration is: "+ eventDuration);
-  console.log("transitionTime is: "+ transitionTime);
-  console.log("startTime is: "+ var_startTime);
+  //
+  // console.log("eventDuration is: "+ eventDuration);
+  // console.log("transitionTime is: "+ transitionTime);
+  // console.log("startTime is: "+ var_startTime);
 
 };
 
