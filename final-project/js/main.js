@@ -64,15 +64,17 @@ function calculateHeats () {
 
     totalDuration = totalMilliseconds + parseInt(eventDuration)*60000 + parseInt(transitionTime)*60000;
     var newDate = new Date(totalDuration);
+    var newHour = newDate.getUTCHours();
+    var newMinute = newDate.getUTCMinutes();
 
     // i need to convert millseconds back into time into the newHeatTime
-    var newHeatTime = newDate.getUTCHours() + ":" + newDate.getUTCMinutes()
+    var newHeatTime = newHour + ":" + newMinute;
 
     counter++; //increment heat number
     heatList.push('<li>Heat ' + counter + ': <span class= \"heatPadding\" >'+ newHeatTime +'</span></li>'); //add counter to array group
     $("#heatTimes").html(heatList);  //write to html doc
 
-    // reassign totalMilliseconds to newHeatTime 
+    // reassign totalMilliseconds to newHeatTime
     totalMilliseconds = (parseInt(newDate.getUTCHours())*3600000) + (parseInt(newDate.getUTCMinutes())*60000);
 
   };
