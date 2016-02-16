@@ -8,7 +8,7 @@
 
 // BUGS to resolve
 // add 0 to single digit output
-// convert 
+// if users click generate after initial use, heat # continues to increment
 
 //FEATURES
 // add field validation
