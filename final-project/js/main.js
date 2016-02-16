@@ -7,8 +7,8 @@
 // for (var i = 0; i <10; i++) {document.write('<li>Heat ' + i + '</li>' );}
 
 // BUGS to resolve
-// if user changes # of heats, it needs to reset the heat output
-
+// add 0 to single digit output
+// convert 
 
 //FEATURES
 // add field validation
@@ -78,10 +78,6 @@ function calculateHeats () {
     totalMilliseconds = (parseInt(newDate.getUTCHours())*3600000) + (parseInt(newDate.getUTCMinutes())*60000);
 
   };
-  //
-  // console.log("eventDuration is: "+ eventDuration);
-  // console.log("transitionTime is: "+ transitionTime);
-  // console.log("startTime is: "+ var_startTime);
 
 };
 
