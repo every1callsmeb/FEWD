@@ -67,8 +67,15 @@ function calculateHeats () {
     var newHour = newDate.getUTCHours();
     var newMinute = newDate.getUTCMinutes();
 
-    // i need to convert millseconds back into time into the newHeatTime
-    var newHeatTime = newHour + ":" + newMinute;
+
+    // need to convert number to string so I can add leading zero
+    // if (newMinute.length < 2){newMinuteStr = "0"+toString(newMinute)} else newMinuteStr = toString(newMinute);
+
+    if (newMinute.length < 2){var newMinuteStr = "0"+toString(newMinute)} else {newMinuteStr = toString(newMinute)};
+    
+    // concatenate values
+
+    var newHeatTime = newHour + ":" + newMinuteStr;
 
     counter++; //increment heat number
     heatList.push('<li>Heat ' + counter + ': <span class= \"heatPadding\" >'+ newHeatTime +'</span></li>'); //add counter to array group
