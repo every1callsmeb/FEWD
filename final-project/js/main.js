@@ -7,8 +7,7 @@
 // for (var i = 0; i <10; i++) {document.write('<li>Heat ' + i + '</li>' );}
 
 // BUGS to resolve
-// add 0 to single digit output
-// if users click generate after initial use, heat # continues to increment
+
 
 //FEATURES
 // add field validation
@@ -20,17 +19,6 @@
 
 $("#generateButton").click(calculateHeats);
 $("#resetButton").click(reset);
-
-// function convertTime() {
-//   var stringStartTime = $("#startTime").val();
-//
-//   parseTime = stringStartTime.split(":");
-//   hour = parseTime[0];
-//   minutes = parseTime[1];
-//
-//   totalMinutes = (parseInt(hour)*60) + parseInt(minutes);
-//   // console.log(totalMinutes);
-// }
 
 // Functions
 
@@ -44,7 +32,7 @@ function calculateHeats () {
   var totalDuration;
 
   var stringStartTime = $("#startTime").val();
-
+  counter = 0;
   // convert stringTime to integer so I can calculate the values
 
   parseTime = stringStartTime.split(":");
@@ -71,7 +59,11 @@ function calculateHeats () {
     var newMinuteStr = newMinute.toString();
     if (newMinuteStr.length < 2){newMinuteStr = "0"+newMinuteStr} else {newMinuteStr};
 
-    var newHeatTime = newHour + ":" + newMinuteStr;
+    var newHourStr = newHour.toString();
+    if (newHourStr.length < 2){newHourStr = "0"+newHourStr} else {newHourStr};
+
+
+    var newHeatTime = newHourStr + ":" + newMinuteStr;
 
     counter++; //increment heat number
 
