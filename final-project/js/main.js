@@ -21,18 +21,18 @@
 $("#generateButton").click(calculateHeats);
 $("#resetButton").click(reset);
 
+// function convertTime() {
+//   var stringStartTime = $("#startTime").val();
+//
+//   parseTime = stringStartTime.split(":");
+//   hour = parseTime[0];
+//   minutes = parseTime[1];
+//
+//   totalMinutes = (parseInt(hour)*60) + parseInt(minutes);
+//   // console.log(totalMinutes);
+// }
+
 // Functions
-
-function convertTime() {
-  var stringStartTime = $("#startTime").val();
-
-  parseTime = stringStartTime.split(":");
-  hour = parseTime[0];
-  minutes = parseTime[1];
-
-  totalMinutes = (parseInt(hour)*60) + parseInt(minutes);
-  // console.log(totalMinutes);
-}
 
 function calculateHeats () {
 
@@ -44,7 +44,6 @@ function calculateHeats () {
   var totalDuration;
 
   var stringStartTime = $("#startTime").val();
-
 
   // convert stringTime to integer so I can calculate the values
 
@@ -67,18 +66,19 @@ function calculateHeats () {
     var newHour = newDate.getUTCHours();
     var newMinute = newDate.getUTCMinutes();
 
+    // need to convert int to string so I can add leading zero for anything < 10
 
-    // need to convert number to string so I can add leading zero
-    // if (newMinute.length < 2){newMinuteStr = "0"+toString(newMinute)} else newMinuteStr = toString(newMinute);
-
-    if (newMinute.length < 2){var newMinuteStr = "0"+toString(newMinute)} else {newMinuteStr = toString(newMinute)};
-    
-    // concatenate values
+    var newMinuteStr = newMinute.toString();
+    if (newMinuteStr.length < 2){newMinuteStr = "0"+newMinuteStr} else {newMinuteStr};
 
     var newHeatTime = newHour + ":" + newMinuteStr;
 
     counter++; //increment heat number
-    heatList.push('<li>Heat ' + counter + ': <span class= \"heatPadding\" >'+ newHeatTime +'</span></li>'); //add counter to array group
+
+    var counterStr = counter.toString();
+    if (counterStr.length < 2){counterStr = "0"+counterStr} else {counterStr};
+
+    heatList.push('<li>Heat ' + counterStr + ': <span class= \"heatPadding\" >'+ newHeatTime +'</span></li>'); //add counter to array group
     $("#heatTimes").html(heatList);  //write to html doc
 
     // reassign totalMilliseconds to newHeatTime
