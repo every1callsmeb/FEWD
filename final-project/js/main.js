@@ -18,6 +18,7 @@
 // Triggers
 
 $("#instructions").hide();
+$("#heatTimes").hide();
 $("#generateButton").click(calculateHeats);
 $("#resetButton").click(reset);
 $("#help p").click(help);
@@ -80,9 +81,8 @@ function calculateHeats () {
 
     // reassign totalMilliseconds to newHeatTime
     totalMilliseconds = (parseInt(newDate.getUTCHours())*3600000) + (parseInt(newDate.getUTCMinutes())*60000);
-
   };
-
+    $("#heatTimes").slideDown(1000);
 };
 
 function reset (){
