@@ -106,6 +106,37 @@ header {
   width: 7.5%;
 }
 
+#help {
+  width: 55%;
+  margin: 0 auto;
+}
+
+#help p {
+  cursor: pointer;
+  color: #37AC31;
+  font-size: 12px !important;
+  padding: 5px 10px 5px 5px;
+  text-align: right;
+}
+
+#help span {
+  color: #37AC31;
+  font-size: 14px !important;
+}
+
+#instructions {
+  border: 1px solid #37AC31;
+  border-radius: 5px;
+  width: 55%;
+  margin: 0 auto;
+}
+
+#instructions p {
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
 #scheduleInput {
   overflow: auto;
   padding-bottom: 25px;
@@ -160,6 +191,14 @@ header {
   border-radius: 5px;
 }
 
+.hint {
+  display: block;
+  background-color: #e3e3e3;
+  margin: 0px;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 5px;
+}
 
 #heatTimes {
   width: 25%;

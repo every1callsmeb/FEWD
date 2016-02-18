@@ -17,10 +17,16 @@
 
 // Triggers
 
+$("#instructions").hide();
 $("#generateButton").click(calculateHeats);
 $("#resetButton").click(reset);
+$("#help p").click(help);
 
 // Functions
+
+function help () {
+  $("#instructions").slideToggle();
+}
 
 function calculateHeats () {
 
@@ -39,7 +45,7 @@ function calculateHeats () {
   hour = parseTime[0];
   minutes = parseTime[1];
 
-  // normalize startTime to millseconds split HH from MM, HH = 60 minutes + MM
+  // normalize startTime to milliseconds
 
   totalMilliseconds = (parseInt(hour)*3600000) + (parseInt(minutes)*60000);
 
@@ -49,7 +55,7 @@ function calculateHeats () {
 
   while (counter < totalHeats) {
 
-    totalDuration = totalMilliseconds + parseInt(eventDuration)*60000 + parseInt(transitionTime)*60000;
+    totalDuration = (totalMilliseconds + parseInt(eventDuration)*60000 + parseInt(transitionTime)*60000);
     var newDate = new Date(totalDuration);
     var newHour = newDate.getUTCHours();
     var newMinute = newDate.getUTCMinutes();
@@ -61,7 +67,6 @@ function calculateHeats () {
 
     var newHourStr = newHour.toString();
     if (newHourStr.length < 2){newHourStr = "0"+newHourStr} else {newHourStr};
-
 
     var newHeatTime = newHourStr + ":" + newMinuteStr;
 
@@ -88,4 +93,12 @@ function reset (){
   $("input[id=eventDuration]").val("");
   $("input[id=transitionTime]").val("");
   $("#heatTimes li").remove();
+}
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
 }
