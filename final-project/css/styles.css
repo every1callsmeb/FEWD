@@ -218,7 +218,16 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 1px;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+footer a {
+  color: #fff;
 }
 
 /******************************************
